@@ -11,7 +11,7 @@ const AuthPage = ({ type = "login" }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-     const API_BASE_URL = "http://localhost:3000/api";
+     const API_BASE_URL = "https://aicomponentgeneratorbackend.onrender.com/api";
     const endpoint = isLogin ? `${API_BASE_URL}/user/signIn` : `${API_BASE_URL}/user/signUp`;
     const payload = isLogin ? { email, password } : { username:name, email, password };
 
